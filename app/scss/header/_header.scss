@@ -1,0 +1,38 @@
+.logo {
+  font-family: 'CPoppinsExtraLight', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: $dark-grey-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.main-nav {
+  a {
+    font-family: 'CPoppinsRegular', sans-serif;
+    margin-right: 32px;
+    position: relative;
+    display: inline-block;
+    &:hover {
+      text-decoration: none;
+      &::after {
+        display: inline-block;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      top: 23px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $main-color;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+body {
+  font-size: 16px;
+  font-family: 'CPoppinsLight', sans-serif;
+}
+
+p {
+  color: $light-grey-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'CPoppinsBold', sans-serif;
+  color: $header-color;
+}
+a {
+  color: $black-color;
+  text-decoration: none;
+  &:hover {
+    color: $main-color;
+  }
+}
+.btn,
+button,
+input[type=submit] {
+  color: $black-color;
+  font-family: 'CPoppinsSemiBold', sans-serif;
+  display: inline-block;
+  border: 0;
+  text-transform: uppercase;
+  @include border-radius(2px);
+  height: 52px;
+  padding: 0 44px;
+  line-height: 52px;
+}
